@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <title>Self Care Website</title>
+	   <meta name="viewport" content="width=device-width, initial-scale=1">
+	   <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	   <style type="text/css">
+	   .mySlides {display:none;
+	    margin:0px auto;}
+	   .button {
+           background-color: #50750C; /* Green */
+           border-radius: 50%;
+           color: white;
+		   border:0.5px solid black;
+           padding: 15px 32px;
+           text-align: center;
+           text-decoration: none;
+		   margin-left:100px;
+		   margin-top: -160px;
+           display:inline-block;
+           font-size: 30px;
+		   font-family:Blackadder ITC;
+		   transition:all 0.5s;
+           cursor:pointer;
+         }
+		 
+         .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+         }
+
+         .button span:after {
+          content:'»';
+          position: absolute;
+          opacity: 0;
+          top: 0;
+          right: -20px;
+          transition: 0.5s;
+         }
+
+         .button:hover span {
+           padding-right: 25px;
+         }
+
+         .button:hover span:after {
+         opacity: 1;
+         right: 0;
+         }
+	 
+      li {
+          float: left;
+         }
+
+     li a {
+           display: block;
+           color: #7AC959;
+           text-align: center;
+           padding: 25px 40px;
+		   margin-left:20px;
+           text-decoration: none;
+		   font-size:16px;
+		   
+		   font-family:georgia;
+        }
+     li a:hover {
+          background-color: #7AC959;
+		  color:white;
+         } 
+     .active {
+       background-color: #7AC959;
+	   color:white;
+      }
+     nav {
+         margin-top: -70px;
+         margin-left: 488px;
+         }
+		 
+		 section{
+		 border:1px solid black;
+		 width:980px;
+		 margin:0px auto;
+		 }
+		 #wrapper{
+		 border:1px solid #003448;
+		 width:1300px;
+		 margin:0px auto;
+		 }
+		 footer{
+		  border:1px solid black;
+		  width:980px;
+		  height:150px;
+		  margin:0px auto;
+		 }
+		 
+		 
+	   </style>
+	  
+   </head>
+<body style="background-color:#003448;">
+<div id="wrapper">
+   <header> 
+   <form style="padding-left:850px; margin-top:20px; " action="action_page.php">
+		  <input type="text" name="search" placeholder="Search.." style="border:1px solid black;">
+		  <input type="submit" style="background-color:#7AC959; border:1px solid black; color:white; ">
+       </form>
+       <img style="padding-left:160px; margin-top:-20px;" src="images\258.png">
+	  
+   </header>
+        <nav>
+				
+				<ul style="list-style-type: none;
+           margin: 0;
+           padding: 0;
+           overflow: hidden;
+           background-color: #003448;
+		   bolder:3px;">
+					<li><a href="Self Care.html">Home</a></li>
+					<li><a href="About us.html">About us</a></li>
+				    <li><a href="Our Product.html">Our Product</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+
+		</nav>	
+		<section>
+		  <div >
+		  <img class="mySlides" src="images\147.png">
+          <img class="mySlides" src="images\159.png">
+          <img class="mySlides" src="images\123.png">
+		  </div>
+		</section>
+		<section style="background-color :white; height=150px;">
+		<h2 style="margin-left:20px;font-size:35px;"><b> Our Services:</b></h2>
+		<ul style="list-style-type:circle">
+         <li style="font-size:20px;">Measuring Temperature.</li>
+		 <br>
+		 <br>
+         <li style="font-size:20px;">Measuring Pressure.</li>
+		 <br><br>
+         <li style="font-size:20px;">Measuring Heart beat.</li>
+		 <br><br>
+		 <li style="font-size:20px;">Keeping in touch with your doctor.</li>
+	     <br>
+        </ul>
+		 <img style="padding-left:650px; margin-top:-200px;" src="images\978.png">
+         <a href="login.html"><button class="button" style="vertical-align:middle" onclick="myFunction()"><span>Login</span></button></a>
+		
+		</section>
+		<footer style="background-color :white; height=150px;">
+		  <h1 style="margin-left:630px;font-size:25px;"><b> For Life-Threatening Emergencies Call 123</b></h2>
+		  <div style="margin-top:-60px;padding-left:10px;">
+             <a href="https://twitter.com/">
+             <img title="Twitter" alt="Twitter" src="https://socialmediawidgets.files.wordpress.com/2014/03/01_twitter.png" width="35" height="35" />
+             </a>
+             <a href="https://facebook.com/">
+             <img title="Facebook" alt="Facebook" src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook.png" width="35" height="35" />
+             </a>
+             <a href="https://linkedIn.com/">
+             <img title="LinkedIn" alt="LinkedIn" src="https://socialmediawidgets.files.wordpress.com/2014/03/07_linkedin.png" width="35" height="35" />
+             </a> 
+		     <a href="https://youtube.com/">
+             <img title="YouTube" alt="YouTube" src="images\ytb.png" width="35" height="35" />
+             </a> 
+             <a href="https://instagram.com/">
+             <img title="Instagram" alt="RSS" src="https://socialmediawidgets.files.wordpress.com/2014/03/10_instagram.png" width="35" height="35" />
+             </a>
+           </div>
+		</footer>
+
+
+
+
+</div>
+
+
+ <script>
+	   
+	   var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+	   </script>
+</body>
+</html>

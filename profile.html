@@ -1,0 +1,238 @@
+<html>
+<head>
+<head>
+  <meta charset="utf-8">
+  <title>Profile</title>
+<style type="text/css">
+.graphtabs input[type=radio] {
+          position: absolute;
+          top: -9999px;
+          left: -9999px;
+      }
+      .graphtabs {
+        width: 650px;
+        float: none;
+        list-style: none;
+        position: relative;
+        padding: 0;
+        margin: 0;
+      }
+      .graphtabs  li{
+        float: left;
+      }
+      .graphtabs  label {
+          display: block;
+          padding: 10px 20px;
+          border-radius: 10px 10px 0 0;
+          color: #795548;
+          font-size: 24px;
+          font-weight: normal;
+          font-family: 'Lily Script One', helveti;
+          background: rgba(255,255,255,0.2);
+          cursor: pointer;
+          position: relative;
+          top: 3px;
+          -webkit-transition: all 0.2s ease-in-out;
+          -moz-transition: all 0.2s ease-in-out;
+          -o-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+      }
+      .graphtabs  label:hover {
+        background: rgba(255,255,255,0.5);	
+        top: 0;
+      }
+       
+      [id^=graphtabs]:checked + label {
+        background: #8BC34A;;
+        color: white;
+        top: 0;
+      }
+       
+      [id^=graphtabs]:checked ~ [id^=graphtabs-content] {
+          display: block;
+      }
+      .graphtabs-content{
+        z-index: 2;
+        display: none;
+        text-align: left;
+        width: 850px;
+		height:400px;
+        font-size: 20px;
+        line-height: 140%;
+        padding-top: 10px;
+        background: #D7CCC8;
+        padding: 15px;
+        color: white;
+        position: absolute;
+        top: 53px;
+        left: 0;
+        box-sizing: border-box;
+        -webkit-animation-duration: 0.5s;
+        -o-animation-duration: 0.5s;
+        -moz-animation-duration: 0.5s;
+        animation-duration: 0.5s;
+      }
+.logoutLblPos{
+   position:fixed;
+   right:110px;
+   top:5px;
+   color:#8BC34A;
+}
+.searchpos{
+position:fixed;
+right:165px;
+top:40px;
+color:#8BC34A;
+}
+
+ 
+ </style>
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap.vertical-tabs.css">
+ 
+</head>
+<body style="background-color:#EFEBE9;"> <!-- #FFEBEE#FFFFFF-->
+
+  <div class="container">
+    <div class="page-header">
+	<div class="logo">
+	<form align="right" name="form1" method="post" action="3k/Self Care.html">
+  <label class="logoutLblPos">       <!--<input name="submit2" type="image" src="ic_shutdown.png" height="42" width="42" value="log out" class="btn" action="">-->
+ <input name="submit2" type="submit" id="submit2" value="log out" action="" > <!-- go to home -->
+  </label> 
+</form>
+    <form align="right" name="form2" method="get" action="searh.php">
+	<label class="searchpos">
+	<input type="text" value="Search...." name="s" id="s"  />
+	<input name="searchsubmit" type="image" src="Search.png" height="42" width="42" value="Go" id="searchsubmit" class="btn"  />
+      <!--style="angile:right"-->
+	  </label>
+	  </form>
+	<h1 style="color:#8BC34A;"> <img src="ic_user.png" alt="Smiley face" height="42" width="42"><span>  SelfCare</span><small style="color:#BCAAA4;"><i> Profile</i></small></h1>
+	 </div>
+	 
+	 
+	 <!--<div class="search">
+        <form method="get" id="search" action="#">
+          <span>  
+          </span>
+        </form>
+		</div>
+		--><!--/searchform -->
+		  <div class="clr"></div>
+      </div>
+      <div class="clr"></div>
+     
+    <div class="row" style="min-height:600px;">
+      <div  class="col-sm-6">
+       <h3><img src="poi.jpg" width="1150" height="220" alt="" ></h3> <!-- style="width:100%;" -->
+        <hr color="#795548"/>
+        <div class="col-xs-3"> <!-- required for floating -->
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs tabs-left">
+            <li class="active"><a href="#info" style="color:#8BC34A;" data-toggle="tab">My info</a></li>
+            <li><a href="#records" style="color:#8BC34A;" data-toggle="tab">Records</a></li>
+            <li><a href="#graphs" style="color:#8BC34A;" data-toggle="tab">Graphs of Records</a></li>
+            <li><a href="#notification"  style="color:#8BC34A;" data-toggle="tab">Notifications</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-9">
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div class="tab-pane active" id="info"><pre> <p><strong>Name:</p></strong> 
+           Doc.
+			
+			
+  specialty:
+
+  
+  Date of Brith:
+		
+  Sex:
+		
+  Blood type:
+		
+  Weight:
+		
+  Height:
+		
+  suffer from any Health Problems:   
+  
+
+  
+	    </pre>
+		<div style="padding-left:420px; margin-top:-473px;"> <img src="ghl.jpg" width="580" height="460" /></div>
+	</div> 
+            <div class="tab-pane" id="records"><pre>
+Date of Readings     	HeartBeats    	Temperature 	preasure     
+
+
+
+
+
+
+
+
+
+</pre></div>
+            <div class="tab-pane" id="graphs">
+			<ul class="graphtabs">
+        <li>
+          <input type="radio" checked name="graphtabs" id="graphtabs1">
+          <label for="graphtabs1">Day</label>
+          <div id="graphtabs-content1" class="graphtabs-content animated fadeIn">
+    jsdkjldl
+          </div>
+        </li>
+        <li>
+          <input type="radio" name="graphtabs" id="graphtabs2">
+          <label for="graphtabs2">Week</label>
+          <div id="graphtabs-content2" class="graphtabs-content animated fadeIn">
+            ...
+          </div>
+        </li>
+        <li>
+          <input type="radio" name="graphtabs" id="graphtabs3">
+          <label for="graphtabs3">Month</label>
+          <div id="graphtabs-content3" class="graphtabs-content animated fadeIn">
+            ...
+			.......
+			......
+			............
+			................
+			............
+			...............
+			.
+			.
+			.
+			.
+			.'
+			
+          </div>
+        </li>
+</ul>
+ 
+			</div>
+            <div class="tab-pane" id="notification">notification Tab.</div>
+          </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+      </div>
+        
+      </div>
+    </div>
+
+    
+  </div>
+
+  <footer class="footer" style="width:100%; text-align:center; padding-bottom:20px;">
+  
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</body>
+</html>
